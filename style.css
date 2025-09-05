@@ -1,13 +1,15 @@
+/* Reset do body */
 * {
   margin: 0;
   padding: 0;
   box-sizing: none;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: sans-serif, "Inter";
+  font-size: 20px;
 }
 body {
-  background: #2f365e;
+  background: #000;
 }
-.container{
+.container {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -16,35 +18,59 @@ body {
   min-height: 100vh;
 }
 
+.container-sub {
+  padding: auto;
+  border-radius: 5px;
+  background-color: #fff;
+  max-height: 700px;
+  height: 700px;
+  max-width: 700px;
+  width: 700px;
+  padding: 50px;
+}
+
 form {
+  text-align: center;
   display: flex;
-  margin: 10px;
 }
 input {
-  width: 32em;
-  height: 1.7em;
+  border-radius: 5px;
+  border: solid 0.5px #000;
 }
+
+.inp-btn {
+  display: flex;
+  text-align: center;
+}
+
+.inpt {
+  width: 32em;
+  height: 2em;
+  font-size: 15px;
+}
+
 h1 {
   font-size: 3em;
-  color: #e2dfdf;
+  color: #000;
   text-align: center;
 }
 a {
   text-decoration: none;
-  color: #000;
+  color: #fff;
 }
 
 button:hover {
-  background-color: #fff;
+  background-color: #000;
   transform: scale(1.1);
 }
-button:hover a{
-  color: #000;
+button:hover a {
+  color: #fff;
 }
 
 button {
-  background-color: rgb(255, 255, 255);
-  padding: 5px;
+  background-color: #000;
+  padding: 10px;
+  margin-left: 10px;
   border-radius: 7px;
   cursor: pointer;
   border: solid 0.5px #fff;
